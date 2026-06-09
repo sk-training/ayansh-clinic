@@ -80,3 +80,57 @@ document.querySelectorAll('.services-grid, .doctors-grid, .why-points').forEach(
     item.style.transitionDelay = `${i * 0.08}s`;
   });
 });
+
+// --- Simple i18n loader ---
+const DEFAULT_LANG = 'en';
+const SUPPORTED = ['en','hi'];
+function setDocumentLang(lang){
+  try{ document.documentElement.lang = lang; }catch(e){}
+}
+
+async function loadTranslations(lang){
+  if(!SUPPORTED.includes(lang)) lang = DEFAULT_LANG;
+  const url = `lang/${lang}.json`;
+  try{
+    const res = await fetch(url);
+    if(!res.ok) throw new Error('lang file not found');
+    const data = await res.json();
+    applyTranslations(data);
+    setDocumentLang(lang);
+    localStorage.setItem('site_lang', lang);
+    // mark active button
+    document.querySelectorAll('.lang-btn').forEach(b=> b.classList.toggle('active', b.dataset.lang===lang));
+  }catch(err){
+    if(lang !== DEFAULT_LANG) loadTranslations(DEFAULT_LANG);
+    console.warn('i18n load failed', err);
+  }
+}
+
+function applyTranslations(obj, prefix=''){
+  Object.keys(obj).forEach(k => {
+    const val = obj[k];
+    if(typeof val === 'string'){
+      const key = prefix ? `${prefix}.${k}` : k;
+      document.querySelectorAll(`[data-i18n="${key}"]`).forEach(el => {
+        // element may want to set different attributes
+        const attr = el.dataset.i18nAttr || 'text';
+        if(attr === 'html') el.innerHTML = val;
+        else el.textContent = val;
+      });
+    } else if(typeof val === 'object'){
+      const newPrefix = prefix ? `${prefix}.${k}` : k;
+      applyTranslations(val, newPrefix);
+    }
+  });
+}
+
+// initialize language buttons
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      loadTranslations(btn.dataset.lang);
+    });
+  });
+  const stored = localStorage.getItem('site_lang') || (navigator.language && navigator.language.startsWith('hi') ? 'hi' : 'en');
+  loadTranslations(stored);
+});
