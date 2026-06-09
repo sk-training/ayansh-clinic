@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "doctors": "Doctors",
+    "services": "Services",
+    "contact": "Contact",
+    "book": "Book Appointment"
+  },
+  "logo": {
+    "name": "The Ayansh Clinic",
+    "tagline": "Kidney & Kids"
+  },
+  "hero": {
+    "badge": "Accepting New Patients",
+    "title1": "Expert Care for",
+    "title2": "Kidney & Kids",
+    "subtitle": "Compassionate, evidence-based treatment in Urology and Paediatrics — under one roof at Kankarbagh, Patna."
+  },
+  "cta": {
+    "call": "Call Now",
+    "services": "Our Services"
+  },
+  "stats": {
+    "years": "Years Experience",
+    "patients": "Happy Patients",
+    "special": "Specialisations"
+  },
+  "about": {
+    "label": "About the Clinic",
+    "title": "A Combined Practice Built on Trust & Expertise",
+    "p1": "The Ayansh Clinic is a premier medical centre in Kankarbagh, Patna, offering specialist care across two critical disciplines — Urology and Paediatrics. Our philosophy is simple: every patient deserves the same standard of care that we would want for our own family.",
+    "p2": "Founded by Dr. Asit Kumar and Dr. Nikki Kumari, the clinic combines years of institutional training from premier medical institutes with a warm, reassuring environment that puts both adults and children at ease."
+  }
+  ,
+  "services": {
+    "label": "What We Offer",
+    "title": "Our Specialisations",
+    "subtitle": "Comprehensive care across two specialities — all under one roof.",
+    "tabs": {
+      "urology": "Urology",
+      "paediatrics": "Paediatrics"
+    },
+    "urology": {
+      "kidney": { "title": "Kidney Stone Treatment", "desc": "Non-invasive and minimally-invasive options including ESWL, PCNL, and Ureteroscopy for all types of kidney stones." },
+      "prostate": { "title": "Prostate Disorders", "desc": "Diagnosis and management of BPH, prostatitis, and prostate cancer with modern endoscopic techniques." },
+      "cancers": { "title": "Urological Cancers", "desc": "Expert management of bladder, kidney, and testicular cancers with organ-preserving surgical options where possible." },
+      "infertility": { "title": "Male Infertility", "desc": "Comprehensive evaluation and treatment of male factor infertility including varicocele repair and sperm retrieval." },
+      "lap": { "title": "Laparoscopic Urology", "desc": "Minimally invasive laparoscopic and endoscopic procedures for faster recovery and minimal scarring." },
+      "uti": { "title": "Urinary Tract Infections", "desc": "Diagnosis, treatment, and prevention of recurrent UTIs in men and women with detailed microbiological workup." }
+    },
+    "paediatrics": {
+      "newborn": { "title": "Newborn & Neonatal Care", "desc": "Comprehensive care for newborns including assessment, jaundice management, and feeding support." },
+      "growth": { "title": "Growth & Development", "desc": "Regular monitoring of physical, cognitive, and emotional milestones with early intervention for developmental delays." },
+      "vax": { "title": "Vaccination & Immunisation", "desc": "Complete IAP-recommended immunisation schedules for infants, children, and adolescents." },
+      "resp": { "title": "Respiratory Illnesses", "desc": "Management of asthma, bronchiolitis, pneumonia, and recurrent respiratory infections in children." },
+      "infect": { "title": "Paediatric Infections", "desc": "Diagnosis and treatment of viral, bacterial, and parasitic infections common in childhood." },
+      "nutrition": { "title": "Child Nutrition & Diet", "desc": "Counselling for healthy nutrition, management of malnutrition, obesity, and feeding difficulties in children." }
+    }
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "title": "Visit Us or Call Ahead",
+    "subtitle": "We're here Monday through Saturday. Walk-ins welcome; appointments preferred.",
+    "phone": { "label": "Phone", "number": "+91 95468 64614" },
+    "address": { "label": "Address", "value": "Sector P-017, Vidyapuri Doctors Colony, Near Malahi Pakri Metro & Chowk, Kankarbagh, Patna – 800 020" },
+    "hours": { "label": "Clinic Hours", "value": "Mon – Sat: 9:00 AM – 1:00 PM<br />Mon – Sat: 5:00 PM – 8:00 PM", "sunday": "Sunday: Emergency only" },
+    "whatsapp": "WhatsApp Us",
+    "brand": { "name": "The Ayansh Clinic", "loc": "Kankarbagh, Patna" },
+    "directions": "Get Directions"
+  }
+}
