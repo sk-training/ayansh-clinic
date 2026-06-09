@@ -69,4 +69,32 @@
     "brand": { "name": "The Ayansh Clinic", "loc": "Kankarbagh, Patna" },
     "directions": "Get Directions"
   }
+  ,
+  "doctors": {
+    "label": "Meet the Doctors",
+    "title": "Specialists You Can Trust",
+    "subtitle": "Our doctors bring decades of training from India's finest medical institutions.",
+    "asit": {
+      "degree": "MBBS, MS (Urology)",
+      "cred": { "senior": "Senior Urologist", "resident": "Ex-Senior Resident, AIIMS Patna", "consultant": "Sr. Consultant Urologist, Medanta & Patna" },
+      "tag": { "kidney": "Kidney Stones", "prostate": "Prostate Disorders", "cancers": "Urological Cancers", "infertility": "Male Infertility", "lap": "Laparoscopic Urology", "uti": "UTI Management" }
+    },
+    "nikki": {
+      "degree": "MBBS, MD (Paediatrics)",
+      "cred": { "senior": "Senior Paediatrician", "child": "Child Health & Development Specialist", "neonatal": "Neonatal & Paediatric Care Expert" },
+      "tag": { "newborn": "Newborn Care", "growth": "Growth & Development", "vax": "Vaccination", "resp": "Respiratory Illness", "infect": "Paediatric Infections", "nutrition": "Child Nutrition" }
+    },
+    "expertise": { "title": "Areas of Expertise" },
+    "book": "Book Appointment"
+  },
+  "why": {
+    "label": "Why Choose Us",
+    "title": "The Ayansh Difference",
+    "points": {
+      "1": { "title": "Top-Tier Training", "desc": "Our doctors trained at AIIMS Patna and Medanta — institutions known for surgical excellence and cutting-edge research." },
+      "2": { "title": "One Appointment, Two Specialists", "desc": "Parents can get their child seen by our paediatrician while they consult our urologist — no second trip needed." },
+      "3": { "title": "Transparent Pricing", "desc": "Clear, upfront consultation fees with no hidden charges. We believe good healthcare should be accessible." },
+      "4": { "title": "Convenient Location", "desc": "Located near Malahi Pakri Metro & Chowk — easily accessible by metro, auto, and private vehicle." }
+    }
+  }
 }
